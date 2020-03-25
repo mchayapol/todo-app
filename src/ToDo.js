@@ -10,7 +10,7 @@ function ToDoList(props) {
       .then(data => {
         // setTasks(res.data);
         console.log(data);
-        let tasks = data;
+        let tasks = data.data;
         let L = tasks.map((v, i) => {
           return <li key={i}>{v.name}</li>;
         });
