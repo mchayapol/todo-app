@@ -74,6 +74,7 @@ function ToDoList(props) {
       .then(res => res.json())
       .then(res => {
         fetchTask();
+        textInput.current.value = '';
       });
 
     setTask({});
@@ -97,6 +98,7 @@ function ToDoList(props) {
       .then(res => res.json())
       .then(res => {
         fetchTask();
+        textInput.current.value = '';
       })
 
   }
